@@ -1,1 +1,43 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Локальный SEO-инструмент для изучения агрегированной частотности запросов через Google Ads API."><title>Главная / Home — SEO Keyword Collector</title><link rel="stylesheet" href="/style.css"><meta name="google-site-verification" content="85C7m1HVLPL0qO1pkhnOzuKkdJ9tWdIxPhpqxB7psM4" /></head><body><header class="top"><div class="container"><a class="brand" href="/"><span>K</span>SEO Keyword Collector</a><nav><a href="/">Главная / Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></header><main><section class="hero"><div class="container"><span class="tag">Независимый SEO-инструмент · Independent SEO utility</span><p class="eyebrow">Keyword research & historical metrics</p><h1>Сбор частотности поисковых запросов по странам и регионам</h1><p class="lead">SEO Keyword Collector — локальная утилита для исследования агрегированной статистики ключевых слов через Google Ads API. Предназначена для обработки семантики нескольких SEO-проектов.</p><div class="notice"><strong>Статус проекта:</strong> настройка подключения Google Ads API продолжается. Этот сайт только информирует о проекте; здесь нет входа в Google или сбора паролей и токенов.</div></div></section><section class="section"><div class="container"><div class="cards"><article class="card"><h3>Массовая обработка</h3><p>Импорт ключевых фраз из CSV, разбивка на пакеты, экспорт результатов.</p></article><article class="card"><h3>Страны и языки</h3><p>Исторические показатели по выбранным географическим областям и языкам, если их предоставляет Google Ads API.</p></article><article class="card"><h3>Локальное хранение</h3><p>Сохранение истории и результатов в SQLite и CSV на компьютере владельца.</p></article></div><div class="panel"><h2>Как используются данные Google</h2><p>После отдельной авторизации владельца программа сможет запрашивать агрегированные показатели Google Keyword Planner: средние и помесячные объёмы поиска, а также показатели конкуренции. В Google отправляются выбранные ключевые слова и параметры региона/языка.</p><p>OAuth используется только для доступа к Google Ads API с разрешения владельца. Сайт не обрабатывает авторизацию, не собирает ключевые слова и не принимает OAuth-токены.</p><p><a href="/privacy.html">Политика конфиденциальности</a> · <a href="/terms.html">Условия использования</a></p></div><div class="panel"><h2>About this project</h2><p>SEO Keyword Collector is a privately operated desktop utility for querying aggregated historical keyword metrics using the Google Ads API. It can organize lists of keywords by website, language and geographical area, and store results locally.</p><p>This public website is informational only, and does not request Google passwords, tokens, or user data. Read our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Use</a>.</p></div><p class="small">Questions: <a href="https://github.com/vera28101981/vera28101981.github.io/issues">GitHub Issues</a> (public questions only; do not submit personal information).</p></div></section></main><footer class="foot"><div class="container"><span>© 2026 SEO Keyword Collector · Независимый проект; не связан с Google LLC.</span><span><a href="/privacy.html">Конфиденциальность</a> · <a href="/terms.html">Условия использования</a></span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SEO Keyword Collector is a local SEO desktop application for researching Google Ads Keyword Planner historical keyword search volumes by location and language.">
+<title>SEO Keyword Collector | Google Ads keyword research — SEO Keyword Collector</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="container"><a class="brand" href="/"><span>K</span>SEO Keyword Collector</a><nav aria-label="Site navigation"><a href="/">Home / Главная</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a></nav></div></header>
+<main>
+<section class="hero"><div class="container">
+<p class="eyebrow">Desktop SEO utility · Google Ads API</p>
+<h1>SEO Keyword Collector</h1>
+<p class="lead"><strong>SEO Keyword Collector</strong> is a private desktop application for collecting historical keyword search metrics via the official <strong>Google Ads API (Keyword Planner)</strong>. It helps SEO specialists analyze keyword lists across multiple websites, countries, regions and languages.</p>
+<p class="tag">Keyword search volume · Historical monthly trends · Geo targeting · CSV export</p>
+<div class="notice"><strong>Public information website — no sign-in required.</strong> The application is currently being configured. This website explains the app's purpose, data access and privacy practices. It does not accept Google credentials, Google OAuth tokens, or keyword uploads.</div>
+</div></section>
+<section class="section"><div class="container">
+<div class="panel"><h2>What does the application do?</h2>
+<ol><li>The owner imports a CSV file with SEO keywords for a website or project.</li>
+<li>The owner selects a Google Ads account they are authorized to use, and selects a country, city/region and language.</li>
+<li>After the owner's Google OAuth authorization, the desktop utility requests <strong>historical search-volume metrics</strong> using <code>KeywordPlanIdeaService.GenerateKeywordHistoricalMetrics</code>.</li>
+<li>The utility stores results locally and exports CSV reports for SEO planning. Queries can be repeated later to compare historical trends.</li></ol>
+<p>Google can group close keyword variants and return estimates rather than exact query counts. Availability varies by account, country and language. The application does not access Google Search Console, Gmail, Google Drive, or unrelated account data.</p>
+</div>
+<div class="cards">
+<article class="card"><h3>Keyword analysis</h3><p>Average monthly searches, monthly history and available advertising competition metrics.</p></article>
+<article class="card"><h3>Multiple SEO websites</h3><p>Separate keyword lists for each site with independently selected locations and languages.</p></article>
+<article class="card"><h3>Local-first processing</h3><p>CSV input/output and a local database; no hosted dashboard or online collection of credentials.</p></article>
+</div>
+<div class="panel"><h2>How the application uses Google data</h2>
+<p>The app requires the owner's explicit OAuth permission to access the Google Ads API. It will access authorized Google Ads customer identifiers and aggregated keyword-planning metrics to produce SEO reports. It does not publish account data, sell or share Google user data with advertisers, or use it to train AI models.</p>
+<p><strong>It is not an AI image generator:</strong> the tool does not create, alter or distribute images or videos, including intimate imagery, or use Google APIs for such purposes. It only processes keyword planning statistics.</p>
+<p>Learn more in the <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Use</a>. There is no login required to access any of these public pages.</p>
+</div>
+<div class="panel"><h2>О приложении — русская версия</h2>
+<p><strong>SEO Keyword Collector</strong> — локальная программа для сбора исторической частотности ключевых слов через Google Ads API / Keyword Planner. Программа предназначена для SEO-анализа сайтов с разными регионами и языками.</p>
+<p>Рабочий процесс: загрузка CSV → выбор проекта, региона и языка → авторизация владельца через Google OAuth → запрос агрегированной статистики → сохранение результатов в локальную базу и экспорт CSV. Приложение пока настраивается; на этом информационном сайте нет авторизации и сбора персональных данных.</p>
+<p><a href="/privacy.html">Политика конфиденциальности / Privacy Policy</a> · <a href="/terms.html">Условия использования / Terms of Use</a>.</p>
+</div>
+</div></section></main><footer class="foot"><div class="container"><span>© 2026 SEO Keyword Collector. Independent, privately operated tool; not affiliated with Google LLC.</span><span><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Use</a></span></div></footer></body></html>
