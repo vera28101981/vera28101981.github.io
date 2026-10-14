@@ -3,58 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="SEO Keyword Collector is a private, non-commercial desktop SEO tool for historical keyword search volumes using Google Ads API. See its purpose, access, workflow and privacy practices.">
+<meta name="description" content="SEO Keyword Collector is a desktop app for SEO keyword research. It uses the Google Ads API (Keyword Planner) to get historical search volume for keywords by country, city and language.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://seo-keyword-collector.xyz/">
-<title>SEO Keyword Collector — Personal SEO Keyword Research Software</title>
+<title>SEO Keyword Collector</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="google-site-verification" content="85C7m1HVLPL0qO1pkhnOzuKkdJ9tWdIxPhpqxB7psM4" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="/" aria-label="SEO Keyword Collector home"><span class="brand-mark" aria-hidden="true">K</span><span>SEO Keyword Collector</span></a>
-<nav aria-label="Primary navigation"><a href="/">Home</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms</a></nav>
+<a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#225ec4"/><circle cx="10.5" cy="10.5" r="4.6" fill="none" stroke="#fff" stroke-width="2"/><path d="M14 14l4.6 4.6" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span>SEO Keyword Collector</span></a>
+<nav aria-label="Primary navigation"><a href="/" aria-current="page">Home</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a></nav>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
-<p class="eyebrow">Personal · Non-commercial · Local SEO software</p>
+<p class="eyebrow">Desktop app for SEO keyword research</p>
 <h1>SEO Keyword Collector</h1>
-<p class="lead"><strong>SEO Keyword Collector</strong> is a personal, non-commercial desktop utility being developed to analyze historical keyword search volume through the <strong>Google Ads API (Keyword Planner)</strong>. Its purpose is SEO research across different websites, countries, cities and languages.</p>
-<p><span class="pill">Historical keyword metrics</span> <span class="pill">Country and city targeting</span> <span class="pill">Local CSV reports</span></p>
-<div class="notice"><strong>This is the publicly accessible homepage for the OAuth application “SEO Keyword Collector.”</strong><p>No account, login or registration is required to view this page, the <a href="/privacy.html">Privacy Policy</a> or the <a href="/terms.html">Terms of Use</a>. The desktop program is being configured and is not offered as a public hosted service.</p></div>
+<p class="lead"><strong>SEO Keyword Collector</strong> is a desktop application for SEO keyword research. It uses the <strong>Google Ads API (Keyword Planner)</strong> to get historical search volume for a list of keywords, so the user can see how often people search for each keyword in a selected country, region, city and language.</p>
+<p class="lead-sub">The app only reads keyword statistics. It never creates or changes ads, campaigns or budgets, and it never spends money.</p>
+<p><span class="pill">Historical search volume</span> <span class="pill">Country, region and city targeting</span> <span class="pill">Local CSV reports</span></p>
+<div class="notice"><strong>This page is public.</strong><p>You do not need an account or sign-in to read this homepage, the <a href="/privacy.html">Privacy Policy</a> or the <a href="/terms.html">Terms of Use</a>.</p></div>
 </div></section>
-<section class="section"><div class="wrap">
-<h2>What the application does</h2>
+
+<section class="section" id="purpose"><div class="wrap">
+<h2>What SEO Keyword Collector does</h2>
+<p>The purpose of SEO Keyword Collector is to help with SEO planning: choosing which keywords to target on a website, based on how often people search for them. The app has three functions:</p>
 <div class="card-grid">
-<article class="card"><h3>Research search demand</h3><p>Request Google Keyword Planner historical metrics including estimated average monthly searches and monthly trend data for keyword lists.</p></article>
-<article class="card"><h3>Choose locations and language</h3><p>Analyze the same keywords for a selected city, region, country and language. Each request uses its own targeting settings.</p></article>
-<article class="card"><h3>Organize local reports</h3><p>Associate keywords with personal SEO projects, preserve earlier results and export the findings to CSV for manual analysis.</p></article>
+<article class="card"><h3>Get keyword search volume</h3><p>For each keyword, the app gets average monthly searches and month-by-month search volume from Google Keyword Planner through the Google Ads API.</p></article>
+<article class="card"><h3>Compare locations and languages</h3><p>The same keywords can be checked for different countries, regions, cities and languages, for example to compare demand in two cities.</p></article>
+<article class="card"><h3>Save and export reports</h3><p>Results are grouped by SEO project, saved on the user's computer and can be exported to a CSV file for analysis in a spreadsheet.</p></article>
 </div>
-<div class="panel"><h2>How it works — intended workflow</h2>
-<ol class="flow"><li><strong>Import keywords</strong>The user opens their own CSV keyword file in the local program.</li><li><strong>Set targeting</strong>The user selects an authorized Google Ads account, geography and language.</li><li><strong>Authorize and request</strong>With the user's OAuth consent, the app queries the Google Ads API for historical keyword metrics.</li><li><strong>Review locally</strong>The results can be stored in a local project database and exported as a CSV report.</li></ol>
-<p><strong>Google Ads access is needed only when the owner connects the desktop tool.</strong> No Google authorization takes place on this website, and this site does not collect credentials or offer a sign-in page. Features are subject to Google Ads API approval and regional data availability.</p>
+
+<div class="panel" id="how-it-works"><h2>How it works</h2>
+<ol class="flow">
+<li><strong>Load keywords</strong>The user opens a CSV file with keywords in the app on their computer.</li>
+<li><strong>Choose settings</strong>The user selects their Google Ads account, the location and the language.</li>
+<li><strong>Sign in with Google</strong>The user gives consent on the Google OAuth screen. The app then requests keyword statistics from the Google Ads API.</li>
+<li><strong>Review results</strong>The app shows the statistics and saves them on the user's computer as a local database and CSV file.</li>
+</ol>
+<p>Sign-in with Google happens only inside the desktop app. This website has no sign-in and never asks for Google credentials.</p>
 </div>
-<div class="panel"><h2>Why Google account access is requested</h2>
-<p>The Google Ads API requires OAuth permission to work with an account the user is authorized to access. The intended application uses <code>https://www.googleapis.com/auth/adwords</code> to identify the selected Google Ads customer and request aggregated historical Keyword Planner metrics. That scope may allow broader Google Ads actions, but the utility is designed for keyword research, not for changing campaigns, placing ads, or spending money.</p>
-<p>It does not request Gmail, Google Drive, Google Contacts or other unrelated Google account information. Google user data is not used for advertising profiles, sale to data brokers or training AI models.</p>
-<p><strong>For full details about access, use, storage, sharing, retention and deletion, read our <a href="/privacy.html">Privacy Policy</a>.</strong></p>
+
+<div class="panel" id="google-data"><h2>How SEO Keyword Collector uses Google user data</h2>
+<p>The app requests one OAuth scope: <code>https://www.googleapis.com/auth/adwords</code>. This is the only scope that the Google Ads API offers, and it is required to use Keyword Planner. With the user's consent, the app accesses only:</p>
+<ul>
+<li>the IDs of the Google Ads accounts the user can access, so the user can choose which account to use for requests;</li>
+<li>historical keyword metrics from Keyword Planner (average monthly searches, monthly search volumes, competition and bid estimates) for the keywords the user entered.</li>
+</ul>
+<p>This data is used only to show and save keyword statistics for the user. It is stored only on the user's computer and is not sent to the developer or to any third party. It is not used for advertising, not sold, and not used to train AI or machine-learning models. The app does not request access to Gmail, Google Drive, Contacts, Calendar or any other Google service.</p>
+<p>Full details are in the <a href="/privacy.html">SEO Keyword Collector Privacy Policy</a>.</p>
 </div>
-<div class="panel"><h2>What it is not</h2>
-<p>SEO Keyword Collector is not a Google product and does not provide Google's search engine itself. It is not a generative-AI or image-creation application; it does not generate images or videos, including non-consensual intimate imagery. It only supports SEO keyword analysis using aggregated search statistics.</p>
-<p>Google's keyword metrics are estimates: similar queries may be grouped and results can differ by location and language. The tool is under development, and access is not yet guaranteed.</p>
+
+<div class="panel" id="google-api-terms"><h2>Compliance with Google API Terms of Service</h2>
+<p>SEO Keyword Collector complies with the <a href="https://developers.google.com/terms">Google APIs Terms of Service</a> and the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>. SEO Keyword Collector's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<p>SEO Keyword Collector is <strong>not</strong> an AI application. It does not generate, edit or distribute images, video or audio. It never uses Google APIs or Google user data to create AI-generated non-consensual intimate imagery (AI NCII) or any other sexual or intimate content. It does not use Google user data to develop, improve or train AI or machine-learning models. Google APIs are used only for the keyword research functions described on this page.</p>
 </div>
-<div class="panel"><h2>О проекте на русском</h2>
-<p><strong>SEO Keyword Collector</strong> — личная некоммерческая программа для SEO-анализа частотности ключевых запросов через Google Ads API. Предполагаемый процесс: загрузить CSV с ключами, выбрать страну/город и язык, предоставить разрешение Google OAuth, получить историческую статистику и сохранить её локально для анализа.</p>
-<p>Этот сайт не требует входа в аккаунт, не принимает токены и не загружает ключевые слова. Программа ещё настраивается. <a href="/privacy.html">Политика конфиденциальности</a> подробно описывает данные и способы их удаления.</p>
+
+<div class="panel" lang="ru"><h2>О программе на русском</h2>
+<p><strong>SEO Keyword Collector</strong> — программа для компьютера для SEO-анализа ключевых запросов. Через Google Ads API (Keyword Planner) она получает историческую частотность ключевых слов для выбранной страны, региона, города и языка и сохраняет результаты в локальные отчёты CSV.</p>
+<p>Программа только читает статистику и не меняет рекламные кампании. Данные хранятся только на компьютере пользователя, не передаются третьим лицам и не используются для обучения ИИ. Сайт открыт для всех без входа в аккаунт.</p>
 </div>
 </div></section>
-<section class="section"><div class="wrap"><h2>Project information and contact</h2>
-<p>This project is maintained for personal non-commercial use. Public questions about the website or tool can be submitted through <a href="https://github.com/vera28101981/vera28101981.github.io/issues" rel="noopener noreferrer">GitHub Issues</a>. Never include personal data, credentials, tokens or private keyword lists in a public issue. The Google OAuth consent screen also lists a developer support contact.</p>
+
+<section class="section" id="contact"><div class="wrap">
+<h2>Developer and contact</h2>
+<p>SEO Keyword Collector is a personal, non-commercial project of an independent developer. It is not sold and is not offered as an online service. SEO Keyword Collector is not a Google product and is not affiliated with Google LLC.</p>
+<p>Questions about the app or about your data can be sent to the developer support email shown on the SEO Keyword Collector Google OAuth consent screen, or through <a href="https://github.com/vera28101981/vera28101981.github.io/issues">GitHub Issues</a>. Please do not post passwords, tokens or other private information in public issues.</p>
 <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Use</a></p>
-<p class="small">Page updated 14 October 2026. Public website hosted on GitHub Pages; no sign-in or paid subscription is required to read these pages.</p>
 </div></section>
-</main><footer class="footer"><div class="wrap footer-inner">
-<p>© 2026 SEO Keyword Collector · Independent personal software project; not affiliated with Google LLC.</p>
+</main>
+<footer class="footer"><div class="wrap footer-inner">
+<p>© 2026 SEO Keyword Collector · Independent project, not affiliated with Google LLC.</p>
 <p><a href="/">Home</a><span aria-hidden="true"> · </span><a href="/privacy.html">Privacy Policy</a><span aria-hidden="true"> · </span><a href="/terms.html">Terms of Use</a></p>
-</div></footer></body></html>
+</div></footer>
+</body>
+</html>
